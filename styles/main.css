@@ -101,7 +101,10 @@ footer {
     border-radius: 10px;
     box-shadow: 0 0 4px 0 var(--borderColor);
     padding: 1rem;
+    width: 16rem;
+    text-align: center;
 }
+
 
 .btn-div {
     display: flex;
@@ -111,9 +114,10 @@ footer {
 .btn {
     border: 1px solid var(--borderColor);
     border-radius: 20px;
-    padding: .5rem;
+    padding: .5rem 2rem;
     background-color: var(--backgroundColorBtn);
     cursor: pointer;
+    font-size: 1.2rem;
 }
 
 .btn:hover {
@@ -124,6 +128,7 @@ footer {
     display: inline-block;
     margin: 1rem;
     font-weight: bold;
+    font-size: 1.2rem;
 }
 
 .help-msg-div {

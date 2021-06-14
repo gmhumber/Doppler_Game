@@ -218,7 +218,7 @@ const app = new Vue({
 
                     setTimeout(()=>{
                         this.startGame();
-                    }, 3000)
+                    }, 3750)
                 } else {
                     this.gameStatus = 'awaiting-user-selection';
                 }
