@@ -1,0 +1,5 @@
+{
+    "name": "doppler_games/doppler",
+    "description": "Clone of Simon game made with Vue.js",
+    "require": {}
+}
