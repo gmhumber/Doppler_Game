@@ -18,6 +18,8 @@ html {
     box-sizing: border-box;
     font-family: 'Bubbler One', sans-serif;
     font-size: 16px;
+    max-width: 100vw;
+
 }
 
 *, *::before, *::after {
@@ -27,6 +29,7 @@ html {
 body {
     margin:0;
     background-color: var(--backgroundColorLight);
+    width: 100%;
 }
 
 .page-wrapper {
@@ -37,7 +40,7 @@ body {
 header {
     background-color: var(--backgroundColor);
     margin: 0;
-    width: 100vw;
+    width: 100%;
     height: 8rem;
 }
 
@@ -67,7 +70,7 @@ footer {
     height: 3rem;
     display: flex;
     align-items: center;
-    width: 100vw;
+    width: 100%;
 }
 
 .footer-wrapper {
@@ -137,6 +140,7 @@ footer {
     font-weight: bold;
     margin-top: 1.2rem;
     font-size: 1.4rem;
+    white-space: pre-wrap;
 }
 
 .app {
@@ -154,8 +158,8 @@ footer {
 .segments-container {
     display: grid;
     margin: 0;
-    width: 40vmin;
-    height: 40vmin;
+    width: 40vmax;
+    height: 40vmax;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-gap: 0;
@@ -220,3 +224,16 @@ footer {
     background-color: var(--blueOn);
 }
 
+@media screen and (min-width: 1000px) {
+    .segments-container {
+        width: 30vw;
+        height: 30vw;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .segments-container {
+        width: 25vw;
+        height: 25vw;
+    }
+}

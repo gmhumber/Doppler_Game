@@ -30,7 +30,7 @@
                     <div class="btn-div start-btn" v-if="showStartGameBtn">
                         <button class="btn" type="button" @click="startGame($event)">Start Game</button>
                     </div>
-                    <div class="btn-div reset-btn" v-if="showRestartGameBtn">
+                    <div class="btn-div reset-btn" v-if="!showStartGameBtn">
                         <button class="btn" type="button" @click="restartGame($event)">Restart Game</button>
                     </div>
                     <div class="scoreboard">

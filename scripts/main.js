@@ -265,15 +265,17 @@ const app = new Vue({
         showStartGameBtn: function() {
             if (this.gameStatus === 'inactive' || this.gameStatus === 'lost' ) {
                 return true;
+            } else {
+                return false;
             }
         },
 
-        // property to determine whether the "Restart Game" button should be displayed
+/*         // (PROPERTY IS NOT NEEDED - just take the negated value from showStartGameBtn property instead.) This property to determine whether the "Restart Game" button should be displayed
         showRestartGameBtn: function() {
             if (this.gameStatus !== 'inactive' && this.gameStatus !== 'lost' ) {
                 return true;
             }
-        },
+        }, */
 
         // property to determine the appropriate message to the shown to the user at each stage of a round in the game
         helpMessages: function() {
@@ -289,7 +291,7 @@ const app = new Vue({
                     break;
 
                 case 'lost':
-                    return "Game Over :`(";
+                    return 'Game Over  :(';
                     break;
 
                 case 'awaiting-user-selection':
@@ -313,5 +315,5 @@ const app = new Vue({
 
 function buyBeer(event) {
     event.preventDefault();
-    alert("Thanks! Glad you like the game enough to click here!");
+    alert("Thanks! Glad you liked the game enough to click here!");
 }
