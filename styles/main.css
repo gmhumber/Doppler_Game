@@ -12,6 +12,7 @@
     --borderColor: #243B4A;
     --backgroundColorBtn: #e2dab5;
     --hoverColorBtn: #e4d490;
+    --borderColorSegments: #243B4A;
 }
 
 html {
@@ -175,37 +176,37 @@ footer {
 .top-red-segment {
     background-color: var(--redRest);
     border-top-left-radius: 100%;
-    border-top: 4px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
-    border-left: 4px solid black;
+    border-top: 4px solid var(--borderColorSegments);
+    border-right: 2px solid var(--borderColorSegments);
+    border-bottom: 2px solid var(--borderColorSegments);
+    border-left: 4px solid var(--borderColorSegments);
 }
 
 .right-green-segment {
     background-color: var(--greenRest);
     border-top-right-radius: 100%;
-    border-top: 4px solid black;
-    border-right: 4px solid black;
-    border-bottom: 2px solid black;
-    border-left: 2px solid black;
+    border-top: 4px solid var(--borderColorSegments);
+    border-right: 4px solid var(--borderColorSegments);
+    border-bottom: 2px solid var(--borderColorSegments);
+    border-left: 2px solid var(--borderColorSegments);
 }
 
 .left-yellow-segment {
     background-color: var(--yellowRest);
     border-bottom-left-radius: 100%;
-    border-top: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 4px solid black;
-    border-left: 4px solid black;
+    border-top: 2px solid var(--borderColorSegments);
+    border-right: 2px solid var(--borderColorSegments);
+    border-bottom: 4px solid var(--borderColorSegments);
+    border-left: 4px solid var(--borderColorSegments);
 }
 
 .bottom-blue-segment {
     background-color: var(--blueRest);
     border-bottom-right-radius: 100%;
-    border-top: 2px solid black;
-    border-right: 4px solid black;
-    border-bottom: 4px solid black;
-    border-left: 2px solid black;
+    border-top: 2px solid var(--borderColorSegments);
+    border-right: 4px solid var(--borderColorSegments);
+    border-bottom: 4px solid var(--borderColorSegments);
+    border-left: 2px solid var(--borderColorSegments);
 }
 
 .top-red-segment-on {
